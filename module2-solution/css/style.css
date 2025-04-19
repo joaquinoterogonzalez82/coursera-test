@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    background-color: rgba(141, 114, 17, 0.445);
+    margin: 10%;
+    
+}
+h1 {
+    margin: 30px;
+    text-align: center;
+}
+p {
+    text-align: left;
+    padding-left: 10px;
+    align-items: right;
+    flex: auto;
+
+}
+.box-title {
+    background-color: salmon;
+    position: relative;
+    top: -21px;
+    left: 2px;
+    float: right;
+    text-align: center;
+    width: 120px;
+    border: 3px solid black;
+}
+.box-text {
+    position: relative;
+    top: -40px;
+    float: left;
+}
+#c1 {
+    background-color: rgba(211, 226, 43, 0.584);
+}
+#c2 {
+    background-color: rgba(255, 0, 0, 0.585);
+}
+#c3 {
+    background-color: rgba(52, 177, 41, 0.789);
+}
+
+#b1 {
+    background-color: rgba(243, 248, 86, 0.296);
+}
+#b2 {
+    background-color: rgba(226, 118, 118, 0.286);
+}
+#b3 {
+    background-color: rgba(48, 135, 19, 0.274);
+}
+
+
+    /********** Large devices only **********/
+@media (min-width: 992px) {
+    .col-lg-3, .col-lg-4 {
+        float: left;
+      border: 3px solid black;
+      margin: 10px;
+      background-color: gray;
+    }
+    .row {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .col-lg-3 {
+      width: 25%;
+    }
+    .col-lg-4 {
+      width: 33.33%;
+    }
+    
+  }
+  /********** Medium devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6, .col-md-12 {
+      float: left;
+      border: 3px solid black;
+      gap: 10px;
+    }
+    .row {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .col-md-6 {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+    .col-md-12 {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+  }
+    /********** Small devices only **********/
+    @media (max-width: 767px) {
+        .col-sm-12 {
+          float: left;
+          border: 3px solid black;
+          margin: 10px;
+          background-color: gray;
+        }
+
+        .col-sm-12 {
+          width: 100%;
+        }
+      }
