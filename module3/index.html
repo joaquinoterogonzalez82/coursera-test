@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/module3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/module3/css/bootstrap.css">
+    <link rel="stylesheet" href="/module3/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+    <title>Italian Restaurant</title>
+</head>
+<body>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+   
+    
+    <!-- Contenedor para el navbar -->
+    <!-- Para eliminar el container, se debe de eliminar el div de la clase container o eliminar shadow y background color -->
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+             <!-- Contenedor para el logo y el texto -->
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="index.html" id="logo-float-left" class="invisible-md invisible-sm invisible-xs">
+                        <div id="logo-img"></div>
+                    </a>
+
+                    <div class="navbar-brand">
+                        <a href="index.html"><h1>Italian Restaurant</h1></a>
+                        <p><img id="kosher-img" src="/module3/img/star-kosher.png" alt="Kosher certification"><span>Kosher Certified</span></p>
+                    </div>
+                    
+                    <!-- Botón de menú para dispositivos pequeños -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+
+                            <a target="_blank" class="nav-link active" href="menu-categories.html" aria-current="page"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/></svg>Menu</span></a>
+
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Awards</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+      
+        <div id="main-container" class="container">
+
+          <!-- Contenedor para imagenes -->
+           <div class="jumbotron"></div>
+
+          <!-- Contenedor para el tiles -->
+           <div id="home-tiles" class="row">
+                <div id="menu-title" class="col-lg-4 col-md-6 col-sm-12"><a href="menu-categories.html"><span>Menu</span></a></div>
+
+                <div id="specials-title" class="col-lg-4 col-md-6 col-sm-12"><a href="single-category.html"><span>Specials</span></a></div>
+        
+                <div  id="map-tile" class="col-lg-4 col-md-12 col-sm-12">
+                  <a href="https://maps.app.goo.gl/3y891nhCqHUR7ge5A" target="_blank">
+                    
+                    <span>Map</span>
+                  </a>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6150905.802642415!2d7.43140237441578!3d41.17005337882968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fe82448dd203%3A0xe22cf55c24635e6f!2sItalia!5e0!3m2!1ses!2suy!4v1746757029755!5m2!1ses!2suy" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+           </div>
+
+        </div>
+    </main>
+
+    <footer class="panel-footer">
+        <div class="container-fluid">
+          
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12"><p>Copyright &copy; 2023</p></div>
+
+                <div class="col-lg-3 col-md-4 col-sm-12"><p>All rights reserved</p></div>
+
+                <div class="col-g-3 col-md-4 col-sm-12"><p>Privacy Policy</p></div>
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

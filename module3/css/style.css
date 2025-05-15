@@ -1,0 +1,676 @@
+* {
+    box-sizing: border-box;
+  }
+body {  
+    background-color: rgb(188, 53, 53); /* Red background with 50% opacity */
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Tagesschrift", system-ui;
+}
+/********** Header **********/
+#header-nav {
+    background-color: rgba(15, 66, 207, 0.8);
+    padding: 10px;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.container-fluid {
+    background-color: rgba(36, 131, 23, 0.8); /* White background with 80% opacity */
+    padding-left: 5%;
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#logo-img {
+    background: url("/module3/img/pizza.png") no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    margin: 10px 10px 10px 0;
+}
+#kosher-img {
+    width: 35px;
+    height: 35px;
+    margin: 0px 5px 10px 0;
+}
+#logo-float-left {
+    float: left;
+}
+.navbar-brand {
+    margin-top: 60px;
+}
+.navbar-brand p {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    margin-top: 15px; 
+}
+.navbar-brand p span {
+    vertical-align: middle;
+    color: wheat;
+}
+.navbar-brand a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.navbar-brand h1 {
+    font-size: 40px;
+    color: rgb(0, 0, 0); 
+}
+.navbar-toggler {
+    float: right;
+}
+.nav-link span {
+    display: flex;
+}
+ul.navbar-nav {
+    float: right;
+    margin-top: 20px;
+}
+svg {
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px 0px 0;
+    position: relative;
+    bottom: -5px;
+}
+#main-div-menu {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+}
+
+/********** Main **********/
+main {
+    background-color: rgba(219, 113, 13, 0.8); /* White background with 80% opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+/********** Main Home Page **********/
+#home-tiles {
+    border: 2px solid rgb(0, 26, 255);
+}
+#menu-title {
+    height: 250px;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid rgb(255, 0, 0);
+    overflow: hidden;
+    background: url("/module3/img/image.jpg") no-repeat;
+    background-position: center;
+}
+#specials-title {
+    height: 250px;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid rgb(255, 0, 0);
+    overflow: hidden;
+    background: url("/module3/img/image.jpg") no-repeat;
+    background-position: center;
+}
+#map-tile {
+    height: 250px;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid rgb(255, 0, 0);
+    overflow: hidden;
+    padding: 0px;
+}
+#menu-title:hover, #specials-title:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px rgba(30, 255, 0, 0.884);
+}
+#menu-title span, #specials-title span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+/********** Menu Categories Page  **********/
+
+section.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+.category-title {
+    position: relative;
+    border: 2px solid rgb(255, 0, 0);
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+.category-title span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+/********** Lunch Menu Page  **********/
+.menu-item-tile {
+    border: 1px solid rgb(0, 0, 0);
+}
+.menu-item-photo-number {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+.menu-item-price {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    text-align: center;
+}
+.menu-item-price span {
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+}
+/********** Footer **********/
+footer {
+    background-color: rgba(55, 59, 73, 0.8);
+    padding: 10px;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+footer p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    border: 2px solid rgb(0, 0, 0);
+}
+footer .container-fluid {
+    background-color: rgba(55, 59, 73, 0.8);
+    padding-left: 5%;
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/********** Extra Extra Large devices only **********/
+@media (min-width: 1500px) {
+.invisible-xxl {
+    display: none !important;
+    }
+.navbar-toggler {
+    position: relative;
+    left: 1000px;
+    top: -150px;
+    padding: 20px;
+    border: rgb(0, 255, 255);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(4, 0, 255, 0.8);
+    border-radius: 10px;
+    border-style: solid;
+    }
+.navbar-nav {
+    position: relative;
+    left: 1040px;
+    top: -50px;
+    font-size: 30px;
+    }
+.jumbotron {
+    background: url("/module3/img/image.jpg") no-repeat;
+    margin: 0px;
+    padding: 0px;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 675px;
+    width: 1500px;
+    }
+.menu-item-photo div {
+    position: absolute;
+    bottom: 38px;
+    right: 374px;
+    width: 80px;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+    
+    
+        .col-xxl-3, .col-xxl-4 {
+            float: left;
+        }
+        .col-xxl-3 {
+        width: calc(25% - 20px);
+        margin: 10px;
+        }
+        .col-xxl-4 {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+        }
+        .row {
+            position: relative;
+            right: 0px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+        }
+}
+/********** Extra Intermediate Large devices only **********/
+@media (min-width: 1246px) and (max-width: 1499px) {
+.invisible-xl {
+    display: none !important;
+    }
+.navbar-toggler {
+    position: relative;
+    left: 800px;
+    top: -150px;
+    padding: 20px;
+    border: rgb(0, 255, 255);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 255, 21, 0.8);
+    border-radius: 10px;
+    border-style: solid;
+    }
+.navbar-nav {
+    position: relative;
+    left: 840px;
+    top: -50px;
+    font-size: 30px;
+    }
+.jumbotron {    
+    background: url("/module3/img/image.jpg") no-repeat;
+    margin: 0px;
+    padding: 0px;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 675px;
+    width: 1200px;
+    }
+.menu-item-photo div {
+    position: absolute;
+    bottom: 37px;
+    right: 284px;
+    width: 80px;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+    
+    
+        .col-xl-3, .col-xl-4 {
+            float: left;
+        }
+        .col-xl-3 {
+        width: calc(25% - 20px);
+        margin: 10px;
+        }
+        .col-xl-4 {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+        }
+        .row {
+            position: relative;
+            right: 0px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+        }
+}
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) and (max-width: 1245px) {
+.invisible-xl {
+    display: none !important;
+    }
+.navbar-toggler {
+    position: relative;
+    left: 800px;
+    top: -150px;
+    padding: 20px;
+    border: rgb(0, 255, 255);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 0, 255, 0.8);
+    border-radius: 10px;
+    border-style: solid;
+    }
+.navbar-nav {
+    position: relative;
+    left: 840px;
+    top: -50px;
+    font-size: 30px;
+    }
+.jumbotron {    
+    background: url("/module3/img/image.jpg") no-repeat;
+    margin: 0px;
+    padding: 0px;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 675px;
+    width: 1200px;
+    }
+.menu-item-photo div {
+    position: absolute;
+    bottom: 37px;
+    right: 284px;
+    width: 80px;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+    
+    
+        .col-xl-3, .col-xl-4 {
+            float: left;
+        }
+        .col-xl-3 {
+        width: calc(25% - 20px);
+        margin: 10px;
+        }
+        .col-xl-4 {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+        }
+        .row {
+            position: relative;
+            right: 0px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+        }
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+.invisible-lg {
+    display: none !important;
+    }
+.navbar-toggler {
+    position: relative;
+    left: 600px;
+    top: -150px;
+    padding: 20px;
+    border: rgb(0, 255, 0);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 0, 0.8);
+    border-radius: 10px;
+    border-style: solid;
+    }
+
+.navbar-nav li {
+    position: relative;
+    left: 640px;
+    top: -50px;
+    font-size: 30px;
+    }   
+.jumbotron {
+    background: url("/module3/img/image\ \(1\).jpg") no-repeat;
+    margin: 0px;
+    padding: 0px;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 675px;
+    width: 975px;
+    }
+.menu-item-photo div {
+    position: absolute;
+    bottom: 80px;
+    right: 241px;
+    width: 80px;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    margin: 0px;}
+
+
+    .col-lg-3, .col-lg-4 {
+        float: left;
+    }
+    .col-lg-3 {
+      width: calc(25% - 20px);
+      margin: 10px;
+    }
+    .col-lg-4 {
+      width: calc(33.33% - 20px);
+      margin: 10px;
+    }
+    .row {
+        position: relative;
+        right: 0px;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: row;
+    }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+.invisible-md {
+    display: none !important;
+    }
+.navbar-toggler {
+    position: relative;
+    left: 300px;
+    top: -150px;
+    padding: 20px;
+    border: rgb(255, 0, 0);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(11, 7, 224, 0.8);
+    border-radius: 10px;
+    border-style: solid;
+    }
+.navbar-nav {
+    position: relative;
+    left: 400px;
+    top: -50px;
+    font-size: 30px;
+    }
+.jumbotron {
+    margin: 0px;
+    padding: 0px;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 675px;
+    background: url("/module3/img/image.jpg") no-repeat;
+    }
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.menu-item-photo div {
+    position: absolute;
+    bottom: 203px;
+    right: 170px;
+    width: 80px;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+
+
+    .col-md-6, .col-md-12 {
+        float: left;
+        gap: 10px;
+      }
+
+      .col-md-6 {
+          width: calc(50% - 20px);
+          margin: 10px;
+      }
+      .col-md-12 {
+          width: calc(100% - 20px);
+          margin: 10px;
+      }
+      .col-md-4 {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+      }
+      .row {
+        position: relative;
+        right: 0px;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+      }
+}
+
+
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+.invisible-sm {
+    display: none !important;
+    }
+.navbar-toggler {
+    position: relative;
+    left: 200px;
+    top: -150px;
+    padding: 20px;
+    border: rgb(0, 17, 255);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(224, 7, 7, 0.8);
+    border-radius: 10px;
+    border-style: solid;
+    }
+.navbar-nav {
+    position: relative;
+    left: 250px;
+    top: -50px;
+    font-size: 30px;
+    }
+.jumbotron {
+    margin: 0px;
+    padding: 0px;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 675px;
+    background: url("/module3/img/image.jpg") no-repeat;
+    }    
+.menu-item-photo div {
+    position: relative;
+    top: 150px;
+    left: 170px;
+    width: 80px;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+
+
+    .col-sm-12 {
+        float: left;
+        padding: 10px;
+      }
+
+      .col-sm-12 {
+        width: 100%;
+      }
+    .col-sm-6 {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+    .col-sm-4 {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+    }
+    .col-sm-5 {
+        width: calc(41.66% - 20px);
+        margin: 10px;
+    }
+    .col-sm-7 {
+        width: calc(58.33% - 20px);
+        margin: 10px;
+    }
+
+}
+
+/********** Extra Small devices only **********/
+@media (max-width: 575px) {
+.invisible-xs {
+    display: none !important;
+    }
+.navbar-toggler {
+    position: relative;
+    left: 120px;
+    top: -150px;
+    padding: 20px;
+    border: rgb(0, 255, 255);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(188, 7, 224, 0.8);
+    border-radius: 10px;
+    border-style: solid;
+    }
+.navbar-nav {
+    position: relative;
+    left: 160px;
+    top: -50px;
+    font-size: 30px;
+    }
+.jumbotron {
+    margin: 0px;
+    padding: 0px;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 675px;
+    background: url("/module3/img/image.jpg") no-repeat;
+    }    
+.menu-item-photo div {
+    position: relative;
+    top: 150px;
+    left: 170px;
+    width: 80px;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+.menu-item-price {
+    text-align: left;
+}
+
+    .col-xs-12 {
+        float: left;
+        padding: 10px;
+      }
+
+      .col-xs-12 {
+        width: 100%;
+      }
+    .col-xs-6 {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+    .col-xs-4 {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+    }
+}
+/********** End of CSS **********/
