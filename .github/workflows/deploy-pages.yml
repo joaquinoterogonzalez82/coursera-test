@@ -29,7 +29,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './module3-solution' # Change this to your folder path
+          path: './module4-solution/assignment4-solution-starter/harder' # Change this to your folder path
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
